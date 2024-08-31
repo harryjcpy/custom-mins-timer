@@ -1,0 +1,54 @@
+/* LoadingAnimation.css */
+/* .loader {
+  width: 340px;
+  aspect-ratio: 1;
+  --g: conic-gradient(from -90deg at 10px 10px,#08fd21 90deg,#ff010100 0);
+  margin-top: 60px;
+  margin-left: 665px;
+  background: var(--g), var(--g), var(--g);
+  background-size: 50% 50%;
+  animation: l19 1s infinite;
+}
+
+@keyframes l19 {
+   0%   {background-position:0     0, 10px 10px, 20px 20px}
+   33%  {background-position:10px  10px}
+   66%  {background-position:0    20px,10px 10px,20px 0   }
+   100% {background-position:0     0, 10px 10px, 20px 20px}
+} */
+.loader {
+  width: 340px;
+  aspect-ratio: 1;
+  --g: conic-gradient(from -90deg at 10px 10px, #08fd21 90deg, #ff010100 0);
+  margin-top: 60px;
+  margin-left: 665px;
+  background: var(--g), var(--g), var(--g);
+  background-size: 50% 50%;
+  animation: l19 1s infinite;
+}
+
+@keyframes l19 {
+  0%   {background-position: 0     0, 10px 10px, 20px 20px}
+  33%  {background-position: 10px  10px}
+  66%  {background-position: 0    20px, 10px 10px, 20px 0}
+  100% {background-position: 0     0, 10px 10px, 20px 20px}
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+  .loader {
+    width: 43vw; /* Responsive width */
+    --g: conic-gradient(from -90deg at 2vw 2vw, #08fd21 90deg, #ff010100 0);
+    margin-top: 4vh; /* Responsive margin */
+    margin-left: 15vh;
+    margin-right: auto; /* Centering the loader */
+  }
+
+  @keyframes l19 {
+    0%   {background-position: 0     0, 2vw 2vw, 4vw 4vw}
+    33%  {background-position: 2vw   2vw}
+    66%  {background-position: 0    4vw, 2vw 2vw, 4vw 0}
+    100% {background-position: 0     0, 2vw 2vw, 4vw 4vw}
+  }
+}
+

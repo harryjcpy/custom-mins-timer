@@ -2,10 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Code+Pro');
 
-@font-face{
-  font-family:'digital-clock-font';
-  src: url('put_the_location_to_your_font.ttf or .otf');
- }
+/*
+.app-container {
+  min-height: 100vh;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #000000;
+  color: #fff;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.theme-toggle-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+} 
 
 body {
   margin: 0;
@@ -14,19 +32,194 @@ body {
 }
 
 h1 {
+  height: 60px;
   text-align: center;
   background-color: rgb(125, 188, 25);
   font-weight: 400;
   color: rgb(22, 67, 34);
-  padding-bottom: 14px;
   font-family: 'Pacifico', cursive;
 }
 
+.button-container {
+  margin-left: 644px;
+  margin-top: 23px;
+}
+
+input {
+  margin-left: 560px;
+  width: 400px;
+  height: 40px;
+  font-size: 20px; 
+  font-weight: bold; 
+  font-family: 'Comic Sans MS', cursive, sans-serif; 
+  background-color: #1d1f21; 
+  color: #e90376; 
+  text-shadow: 0 0 5px #0077ff, 0 0 10px #00bbff, 0 0 15px #44dada; 
+  padding: 8px;
+  border: 2px solid #ff69b4; 
+  border-radius: 10px; 
+  outline: none; 
+  transition: transform 0.2s;
+}
+
 .timer-disc {
-  /* background-color: #138dd9; */
-  margin-top: 40px;
-  margin-left: 370px;
-  font-size: 175px;
+  margin-top: 20px;
+  margin-left: 663px;
+  font-size: 75px;
+  width: 126px;
+  height: 64px;
+  font-family: 'Orbitron', sans-serif;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+.hourglass-loader {
+  --c1: #673b14;
+  --c2: #f8b13b;
+  width: 40px;
+  height: 80px;
+  border-top: 4px solid var(--c1);
+  border-bottom: 4px solid var(--c1);
+  background: linear-gradient(90deg, var(--c1) 2px, var(--c2) 0 5px, var(--c1) 0) 50% / 7px 8px no-repeat;
+  display: grid;
+  overflow: hidden;
+  animation: hourglass-spin 2s infinite linear;
+}
+
+.minutes {
+  color: rgb(218, 110, 21);
+}
+
+.seconds {
+  color: rgb(30, 99, 9)
+}
+
+.timer-over {
+  color: rgb(215, 15, 15);
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  font-size: 100px;
+  font-family: "Dancing Script";
+  opacity: 0.65;
+  z-index: 0;
+}
+
+.start-button {
+  width: 65px;
+  height: 45px;
+  margin-right: 10px;
+  border-radius: 5px;
+} 
+
+.pause-button {
+  width: 65px;
+  height: 45px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.reset-button {
+  width: 65px;
+  height: 45px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.alarm-off {
+  margin-left: 46%;
+  margin-right: 45%;
+  margin-top: 100px;
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  transition: filter 0.3s ease;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.66;
+}
+*/
+
+.app-container {
+  min-height: 100vh;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #000000;
+  color: #fff;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.theme-toggle-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+} 
+
+body {
+  margin: 0;
+  background: #020202;
+  overflow: hidden;
+}
+
+h1 {
+  height: 60px;
+  text-align: center;
+  background-color: rgb(125, 188, 25);
+  font-weight: 400;
+  color: rgb(22, 67, 34);
+  font-family: 'Pacifico', cursive;
+}
+
+.button-container {
+  margin-left: 644px;
+  margin-top: 23px;
+}
+
+input {
+  margin-left: 560px;
+  width: 400px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #1d1f21;
+  color: #e90376;
+  text-shadow: 0 0 5px #0077ff, 0 0 10px #00bbff, 0 0 15px #44dada;
+  padding: 8px;
+  border: 2px solid #ff69b4;
+  border-radius: 10px;
+  outline: none;
+  transition: transform 0.2s;
+}
+
+.timer-disc {
+  margin-top: 20px;
+  margin-left: 673px;
+  font-size: 75px;
   width: 126px;
   height: 64px;
   font-family: 'Orbitron', sans-serif;
@@ -53,20 +246,13 @@ h1 {
   z-index: 0;
 }
 
-.start-button {
-  width: 200px;
-  height: 50px;
-  font-size: 1.2rem;
-  margin: 10px;
-  padding: 10px;
+.start-button,
+.pause-button,
+.reset-button {
+  width: 65px;
+  height: 45px;
+  margin: 0 10px;
   border-radius: 5px;
-  z-index: 1; 
-}
-
-.timer-button {
-  margin-top: 75px;
-  margin-left: 43%;
-  margin-right: 43%;
 }
 
 .alarm-off {
@@ -84,11 +270,7 @@ h1 {
   transition: filter 0.3s ease;
 }
 
-/* .container.bright {
-  filter: brightness(2); 
-} */
-
-canvas {
+ canvas {
   display: block;
   width: 100%;
   height: 100%;
@@ -98,8 +280,53 @@ canvas {
   pointer-events: none;
   z-index: 0;
   opacity: 0.66;
-}
+} 
 
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+  .button-container {
+    margin: 0 auto;
+    margin-top: 2vh;
+    text-align: center;
+  }
+
+  input {
+    margin: 0 auto;
+    width: 70vw;
+    font-size: 4vw;
+    padding: 2vw;
+    min-width: 100%;
+  }
+
+  .timer-disc {
+    margin: 2vh auto;
+    font-size: 10vw;
+    width: 20vw;
+    height: 10vh;
+  }
+
+  .start-button,
+  .pause-button,
+  .reset-button {
+    width: 15vw;
+    height: 7vh;
+  }
+
+  .alarm-off {
+    margin: 0 auto;
+    margin-top: 8vh;
+  }
+
+  .timer-over {
+    font-size: 12vw;
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+  }
+
+  h1 {
+    font-size: 10vw;
+  }
+}
 
 
 
