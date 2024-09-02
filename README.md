@@ -3,13 +3,13 @@
 A visually appealing and fully functional timer application built with React.js. The app features a countdown timer, animated loading and hourglass effects, and a fireworks animation with sound when the timer ends. The user can easily start, pause, reset the timer, and interact with the various animations.
 
 ## Table of Contents
-- [Features]
-- [Demo]
-- [Installation]
-- [Usage]
-- [Components]
-- [Technologies Used]
-- [Contributing]
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Components](#components)
+- [Technologies Used](#technologiesused)
+- [Contributing](#contributions)
 
 ## Features
 - **Customizable Timer**: Set the timer in minutes with an input field.
@@ -43,7 +43,7 @@ You can view a live demo of the project [here](https://main--dulcet-wisp-c20542.
 
 4. **Start the development server:**
     ```bash
-    npm start
+    npm run dev
     ```
    
 The app will run locally on [http://localhost:3000](http://localhost:3000).
