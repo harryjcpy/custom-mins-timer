@@ -8,8 +8,8 @@ A visually appealing and fully functional timer application built with React.js.
 - [Installation](#installation)
 - [Usage](#usage)
 - [Components](#components)
-- [Technologies Used](#technologiesused)
-- [Contributing](#contributions)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
 
 ## Features
 - **Customizable Timer**: Set the timer in minutes with an input field.
