@@ -33,7 +33,7 @@ You can view a live demo of the project [here](https://main--dulcet-wisp-c20542.
    
 2. **Navigate to the project directory:**
     ```bash
-    cd timer-react-app
+    cd custom-mins-timer
     ```
    
 3. **Install dependencies:**
