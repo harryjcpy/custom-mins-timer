@@ -46,7 +46,7 @@ You can view a live demo of the project [here](https://main--dulcet-wisp-c20542.
     npm run dev
     ```
    
-The app will run locally on [http://localhost:3000](http://localhost:3000).
+The app will run locally on your localhost server.
 
 ## Usage
 
