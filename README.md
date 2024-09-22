@@ -28,7 +28,7 @@ You can view a live demo of the project [here](https://main--dulcet-wisp-c20542.
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/timer-react-app.git
+    git clone https://github.com/harryjcpy/custom-mins-timer.git
     ```
    
 2. **Navigate to the project directory:**
