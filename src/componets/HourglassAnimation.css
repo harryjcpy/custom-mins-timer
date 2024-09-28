@@ -62,7 +62,6 @@
   }
    
 
-  /* Responsive Styles for Smaller Screens */
   @media (max-width: 768px) {
     .hourglass-loader {
       width: 6vw; 
