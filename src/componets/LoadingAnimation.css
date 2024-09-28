@@ -1,21 +1,3 @@
-/* LoadingAnimation.css */
-/* .loader {
-  width: 340px;
-  aspect-ratio: 1;
-  --g: conic-gradient(from -90deg at 10px 10px,#08fd21 90deg,#ff010100 0);
-  margin-top: 60px;
-  margin-left: 665px;
-  background: var(--g), var(--g), var(--g);
-  background-size: 50% 50%;
-  animation: l19 1s infinite;
-}
-
-@keyframes l19 {
-   0%   {background-position:0     0, 10px 10px, 20px 20px}
-   33%  {background-position:10px  10px}
-   66%  {background-position:0    20px,10px 10px,20px 0   }
-   100% {background-position:0     0, 10px 10px, 20px 20px}
-} */
 .loader {
   width: 340px;
   aspect-ratio: 1;
